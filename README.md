@@ -1,129 +1,97 @@
-Career Intelligence RAG Assistant
+# Career Intelligence RAG Assistant
 
 An AI-powered Retrieval-Augmented Generation (RAG) application that analyzes resumes against job descriptions using semantic search, vector embeddings, and Large Language Models (LLMs).
 
 The platform combines LangChain, ChromaDB, Hugging Face embeddings, and Gemini 2.5 Flash to provide skill-gap analysis, resume improvement recommendations, and interview preparation insights.
 
-Features
+## Features
 
-• Resume-to-Job Description Matching
+- Resume-to-Job Description Matching
+- Retrieval-Augmented Generation (RAG)
+- Semantic Search with Vector Embeddings
+- ChromaDB Vector Database
+- Hugging Face Sentence Transformers
+- LangChain-Based Document Processing
+- Skill Gap Analysis
+- Resume Improvement Suggestions
+- Interview Preparation Recommendations
+- Interactive Streamlit Interface
 
-• Retrieval-Augmented Generation (RAG)
+## Tech Stack
 
-• Semantic Search with Vector Embeddings
+### Frontend
 
-• ChromaDB Vector Database
+- Streamlit
 
-• Hugging Face Sentence Transformers
+### Generative AI
 
-• LangChain-Based Document Processing
+- Gemini 2.5 Flash
+- Prompt Engineering
+- Retrieval-Augmented Generation (RAG)
 
-• Skill Gap Analysis
+### Vector Search & Embeddings
 
-• Resume Improvement Suggestions
+- ChromaDB
+- Hugging Face Sentence Transformers
+- Semantic Search
+- Vector Embeddings
 
-• Interview Preparation Recommendations
+### Frameworks & Libraries
 
-• Interactive Streamlit Interface
+- LangChain
+- PyPDF
 
-Tech Stack
+### Language
 
-Frontend
+- Python
 
-Streamlit
+## Architecture
 
-Generative AI
+Resume PDF + Job Description PDF → Document Processing → Text Chunking → Embedding Generation → ChromaDB Vector Database → Semantic Retrieval → Context Augmentation → Gemini 2.5 Flash → Analysis & Recommendations
 
-Gemini 2.5 Flash
-Prompt Engineering
-Retrieval-Augmented Generation (RAG)
+## How It Works
 
-Vector Search & Embeddings
+1. Users upload a Resume PDF and a Job Description PDF.
+2. The application extracts and processes document content.
+3. Documents are split into smaller chunks using LangChain.
+4. Hugging Face sentence-transformer models generate vector embeddings.
+5. Embeddings are stored inside ChromaDB.
+6. User queries are converted into embeddings and matched using semantic similarity search.
+7. Relevant document chunks are retrieved and injected into the prompt.
+8. Gemini 2.5 Flash generates grounded responses using the retrieved context.
 
-ChromaDB
-Hugging Face Sentence Transformers
-Semantic Search
-Vector Embeddings
+## Example Questions
 
-Frameworks & Libraries
+- What skills am I missing for this role?
+- How well does my resume match the job description?
+- What interview topics should I prepare?
+- Which qualifications are required but missing?
+- How can I improve my resume?
 
-LangChain
-PyPDF
+## Key Concepts Demonstrated
 
-Language
+- Retrieval-Augmented Generation (RAG)
+- Large Language Models (LLMs)
+- Vector Databases
+- Embeddings
+- Semantic Search
+- Prompt Engineering
+- Context Augmentation
+- LangChain Workflows
+- Hugging Face Models
+- Gemini API Integration
 
-Python
-Architecture
+## Future Enhancements
 
-Resume PDF + Job Description PDF
+- Multi-document knowledge bases
+- Persistent vector storage
+- Conversational memory
+- Hybrid Search (Keyword + Semantic)
+- Resume Scoring System
+- AI Mock Interview Assistant
 
-↓
+## Author
 
-Document Processing
-
-↓
-
-Text Chunking
-
-↓
-
-Embedding Generation
-
-↓
-
-Vector Database (ChromaDB)
-
-↓
-
-Semantic Retrieval
-
-↓
-
-Context Augmentation
-
-↓
-
-Gemini 2.5 Flash
-
-↓
-
-Analysis & Recommendations
-
-How It Works
-Users upload a resume and a job description.
-The application extracts and processes document content.
-Documents are divided into manageable chunks for retrieval.
-Hugging Face embedding models convert text into vector representations.
-ChromaDB stores and indexes the embeddings.
-User queries are matched against stored vectors using semantic similarity search.
-Relevant document context is retrieved and injected into the prompt.
-Gemini 2.5 Flash generates grounded responses based on the retrieved information.
-Example Use Cases
-Identify missing skills for a target role
-Compare resume qualifications against job requirements
-Generate interview preparation guidance
-Discover resume improvement opportunities
-Analyze candidate-job fit
-Key Concepts Demonstrated
-Retrieval-Augmented Generation (RAG)
-Large Language Models (LLMs)
-Vector Databases
-Embeddings
-Semantic Search
-Prompt Engineering
-Context Augmentation
-LangChain Workflows
-Hugging Face Models
-Gemini API Integration
-Future Enhancements
-Multi-document knowledge bases
-Persistent vector storage
-Conversational memory
-Hybrid search (keyword + semantic)
-Resume scoring and ranking
-AI-powered mock interviews
-Author
-
-Pranshu Malhotra
+**Pranshu Malhotra**
 
 B.Tech Computer Science and Engineering
